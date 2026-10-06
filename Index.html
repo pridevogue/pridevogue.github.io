@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PRIDEVOGUE — Premium Fashion</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #080808;
+  color: #f4f1ea;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Rainbow accent */
+.rainbow {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #e63946,
+    #f4a261,
+    #f6d743,
+    #55a630,
+    #219ebc,
+    #6a4c93
+  );
+}
+
+/* Navigation */
+nav {
+  height: 80px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #222;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 24px;
+  letter-spacing: 5px;
+}
+
+nav a {
+  color: #f4f1ea;
+  text-decoration: none;
+  margin-left: 30px;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+/* Hero */
+.hero {
+  min-height: calc(100vh - 83px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(52px, 12vw, 125px);
+  font-weight: 400;
+  letter-spacing: 8px;
+}
+
+.hero p {
+  margin-top: 25px;
+  color: #aaa;
+  font-size: 11px;
+  letter-spacing: 5px;
+}
+
+.coming-soon {
+  margin-top: 45px;
+  padding: 15px 30px;
+  border: 1px solid #777;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+/* Sections */
+section {
+  padding: 110px 8%;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+section h2 {
+  font-family: Georgia, serif;
+  font-size: 42px;
+  font-weight: 400;
+}
+
+section p {
+  max-width: 600px;
+  margin: 25px auto 0;
+  color: #aaa;
+  line-height: 1.8;
+}
+
+/* Footer */
+footer {
+  padding: 40px;
+  text-align: center;
+  border-top: 1px solid #222;
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+  nav {
+    padding: 0 20px;
+  }
+
+  .logo {
+    font-size: 17px;
+    letter-spacing: 3px;
+  }
+
+  nav a {
+    margin-left: 12px;
+    font-size: 8px;
+  }
+
+  .hero h1 {
+    letter-spacing: 4px;
+  }
+
+  section h2 {
+    font-size: 32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="rainbow"></div>
+
+<nav>
+  <div class="logo">PRIDEVOGUE</div>
+
+  <div>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+  </div>
+</nav>
+
+<main class="hero">
+
+  <h1>PRIDEVOGUE</h1>
+
+  <p>DIFFERENT LOOKS GOOD ON YOU.</p>
+
+  <div class="coming-soon">
+    COMING SOON
+  </div>
+
+</main>
+
+<section id="about">
+
+  <h2>Fashion without labels.</h2>
+
+  <p>
+    PrideVogue is a premium fashion brand created for
+    self-expression, individuality and confidence.
+    Designed for everyone.
+  </p>
+
+</section>
+
+<section id="contact">
+
+  <h2>Stay connected.</h2>
+
+  <p>
+    Follow PrideVogue as we prepare for our first collection.
+  </p>
+
+</section>
+
+<footer>
+  PRIDEVOGUE © 2026
+</footer>
+
+</body>
+</html>
